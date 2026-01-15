@@ -4,6 +4,11 @@
   --background: #ffffff;
   --foreground: #171717;
 }
+html,
+body {
+  overflow-x: hidden;
+}
+
 
 @theme inline {
   --color-background: var(--background);
@@ -17,6 +22,26 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(to right, #5E5D6C, #2D4B73, #72A9D1);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #2D4B73, #72A9D1);
+  border-radius: 8px;
+  border: 2px solid #5E5D6C;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #72A9D1, #2D4B73);
+  box-shadow: 0 0 10px #72A9D1;
 }
 
 body {
