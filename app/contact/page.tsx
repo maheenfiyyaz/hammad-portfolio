@@ -13,6 +13,8 @@ import {
 } from "lucide-react";
 import { ToastContainer, toast, Slide } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { MessageCircle } from "lucide-react";
+
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -101,9 +103,13 @@ export default function ContactPage() {
   // Social links array
   const socialLinks = [
     { Icon: Instagram, url: "https://www.instagram.com/yrr_hammad16?igsh=MW16OWo2NmM4Njd1aA==" },
-    { Icon: Linkedin, url: "https://www.linkedin.com/in/yourusername" },
-    
-    { Icon: Facebook, url: "https://www.facebook.com/yourprofile" },
+    {
+      Icon: MessageCircle,
+      url: "https://wa.me/923405959154"
+    }
+    ,
+
+    { Icon: Facebook, url: "https://www.facebook.com/muhammad.hammad.564776" },
   ];
 
   return (
@@ -113,16 +119,16 @@ export default function ContactPage() {
 
       {/* Heading */}
       <div className="relative text-center mb-16 md:mb-24 px-4">
-  {/* Background Text - Adjusted for mobile */}
-  <h1 className="absolute inset-0 flex items-center justify-center text-[50px] sm:text-[80px] md:text-[140px] font-extrabold text-white/5 tracking-tighter md:tracking-widest select-none pointer-events-none uppercase">
-    Contact
-  </h1>
-  
-  {/* Foreground Text - Scaled for smaller screens */}
-  <h2 className="relative text-3xl sm:text-4xl md:text-6xl font-black tracking-tight uppercase leading-tight">
-    LET'S START A <span className="text-[#72A9D1]">PROJECT</span>
-  </h2>
-</div>
+        {/* Background Text - Adjusted for mobile */}
+        <h1 className="absolute inset-0 flex items-center justify-center text-[50px] sm:text-[80px] md:text-[140px] font-extrabold text-white/5 tracking-tighter md:tracking-widest select-none pointer-events-none uppercase">
+          Contact
+        </h1>
+
+        {/* Foreground Text - Scaled for smaller screens */}
+        <h2 className="relative text-3xl sm:text-4xl md:text-6xl font-black tracking-tight uppercase leading-tight">
+          LET'S START A <span className="text-[#72A9D1]">PROJECT</span>
+        </h2>
+      </div>
 
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 items-start mb-20">
@@ -143,7 +149,7 @@ export default function ContactPage() {
               {[
                 { Icon: Mail, label: "Email Me", value: "madi873807@gmail.com" },
                 { Icon: Phone, label: "WhatsApp & Call", value: "+92 301-9873807" },
-                { Icon: MapPin, label: "Location", value: "Wah Cantt, Punjab, Pakistan" },
+                { Icon: MapPin, label: "Location", value: "Islamabad, Punjab, Pakistan" },
               ].map(({ Icon, label, value }, i) => (
                 <div className="flex items-center gap-5 group" key={i}>
                   <div className="w-12 h-12 rounded-full bg-[#5E5D6C]/20 flex items-center justify-center text-[#72A9D1] shadow-[0_0_15px_rgba(114,169,209,0.1)] group-hover:bg-[#72A9D1] group-hover:text-black transition-all">

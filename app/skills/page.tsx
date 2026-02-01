@@ -16,7 +16,8 @@ export default function SkillsPage() {
     { name: "Adobe Photoshop", icon: <SiAdobephotoshop size={50} /> },
     { name: "Adobe Premiere Pro", icon: <SiAdobepremierepro size={50} /> },
     { name: "Adobe After Effects", icon: <SiAdobeaftereffects size={50} /> },
-    { name: "Adobe Illustrator", icon: <SiAdobeillustrator size={50} /> },
+  
+ 
     { name: "Canva", icon: <SiCanva size={50} /> },
   ];
 

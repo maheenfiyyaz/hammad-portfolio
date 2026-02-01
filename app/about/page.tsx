@@ -28,7 +28,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-6 gap-x-12">
             <div className="space-y-4">
               <p className="text-[#BDBDBD]"><span className="text-white font-bold">Name :</span> Muhammad Hammad</p>
-              <p className="text-[#BDBDBD]"><span className="text-white font-bold">Location :</span> Wah Cantt, Pakistan</p>
+              <p className="text-[#BDBDBD]"><span className="text-white font-bold">Location :</span> Islamabad, Pakistan</p>
               <p className="text-[#BDBDBD]"><span className="text-white font-bold">Nationality :</span> Pakistan</p>
             </div>
 
